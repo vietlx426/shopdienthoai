@@ -144,16 +144,7 @@
             $leftBanner = App\Models\Banner::where('type',2)->where('status',1)->first();
           @endphp
           @if ($leftBanner)
-          <div class="block shop-by-side">
-            <div class="block-content">
-              <div class="manufacturer-area">
-                {{-- <h2 class="saider-bar-title">&nbsp;</h2> --}}
-                <div class="saide-bar-menu">
-                    <a href="{{ $leftBanner->url }}#"><img src="{{ asset('documents/website/'.$leftBanner->image) }}"></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           @endif
 
     @php
